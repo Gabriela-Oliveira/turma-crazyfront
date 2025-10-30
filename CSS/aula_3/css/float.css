@@ -1,0 +1,16 @@
+.fl-left {
+    height: 100px;
+    width: 100px;
+
+    float: none;
+}
+
+.filho-inherit {
+    float: inherit;
+    border: 2px solid #355;
+    background-color: aquamarine;
+    padding: 8px;
+    width: 180px;
+}
+
+

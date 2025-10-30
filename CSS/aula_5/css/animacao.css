@@ -1,0 +1,56 @@
+/* 
+    de para
+
+    animation -> Conjunto de propriedades para controlar os efeitos
+    @keyframes -> Controla cada instante do tempo
+    easings -> Trabalhar em cima da curva de movimento
+*/
+
+/* .container {
+    height: 200px;
+    background-color: blue;
+}
+
+.container:hover {
+    animation-name: aumentar;
+    animation-duration: 10s;
+} */
+
+.container:hover {
+    height: 200px;
+    animation-name: aumentar;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-iteration-count: 3;
+    animation-play-state: forwards;
+
+    /* animation: aumentar 10s ease-in-out 3s; */
+}
+
+/* @keyframes aumentar{
+    from {
+        width: 50px;
+        background-color: rgb(32, 1, 1);
+    }
+    to {
+        width: 300px;
+        background-color: rgb(247, 88, 88);
+    }
+} */
+
+
+@keyframes aumentar{
+    0% {
+        width: 50px;
+        background-color: blue;
+    }
+   50% {
+        width: 150px;
+        background-color: orange;
+    }
+    100%{
+        width: 300px;
+        background-color: red;
+    }
+}

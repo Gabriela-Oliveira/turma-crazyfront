@@ -1,0 +1,28 @@
+p[id] {
+    color: rgb(255, 64, 64);
+}
+
+/* = valor extato */
+input[value="inicio123"] {
+    border: 2px solid red;
+}
+
+/* ^ começa com */
+input[value^="batatinha"] {
+    border: 2px solid rgb(154, 13, 182);
+}
+
+/* $ termina com */
+input[value$="456"] {
+    border: 2px solid rgb(50, 199, 50);
+}
+
+/* * contém */
+input[value*="meio"] {
+    border: 2px solid rgb(26, 181, 192);
+}
+
+/* | igual ou seguido de hífen */
+input[value|="pt"] {
+    border: 2px solid rgb(167, 192, 26);
+}

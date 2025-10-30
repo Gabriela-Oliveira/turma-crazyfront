@@ -1,0 +1,12 @@
+.teste, #teste1, p {
+    color: rgb(238, 196, 11);
+}
+
+.texto-amarelo, .fundo-verde {
+    color: yellow;
+    background-color: green;
+}
+
+/* p .seletorClass {
+    color: rgb(126, 204, 52);
+} */

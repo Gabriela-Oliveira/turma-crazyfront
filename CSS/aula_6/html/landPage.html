@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evento de Tecnologia</title>
+  <!-- Bulma -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <!-- Ícones Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item has-text-weight-bold" href="#">
+        EventoTech
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#hero">Home</a>
+        <a class="navbar-item" href="#info">Informações</a>
+        <a class="navbar-item" href="#palestrantes">Palestrantes</a>
+        <a class="navbar-item" href="#inscricao">Inscrição</a>
+        <a class="navbar-item" href="#contato">Contato</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero is-primary is-fullheight-with-navbar" id="hero">
+    <div class="hero-body has-text-centered">
+      <div class="container">
+        <h1 class="title is-1">
+          Evento de Tecnologia
+        </h1>
+        <h2 class="subtitle is-4">
+          Inovação e conexões para o futuro
+        </h2>
+        <a href="#inscricao" class="button is-light is-large">
+          Inscreva-se agora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFORMAÇÕES DO EVENTO -->
+  <section class="section" id="info">
+    <div class="container">
+      <div class="columns is-variable is-8 has-text-centered">
+        <div class="column">
+          <span class="icon is-large"><i class="fas fa-calendar-alt fa-2x"></i></span>
+          <h3 class="title is-5">Data e horário</h3>
+          <p>10 de outubro, 9h</p>
+        </div>
+        <div class="column">
+          <span class="icon is-large"><i class="fas fa-map-marker-alt fa-2x"></i></span>
+          <h3 class="title is-5">Local</h3>
+          <p>Centro de Convenções</p>
+        </div>
+        <div class="column">
+          <span class="icon is-large"><i class="fas fa-ticket-alt fa-2x"></i></span>
+          <h3 class="title is-5">Entrada</h3>
+          <p>R$ 50,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PALESTRANTES -->
+  <section class="section" id="palestrantes">
+    <div class="container">
+      <h2 class="title has-text-centered">Palestrantes</h2>
+      <div class="columns is-multiline">
+        <div class="column is-12-mobile is-4-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/palestrante1.jpg" alt="Maria Silva">
+              </figure>
+            </div>
+            <div class="card-content has-text-centered">
+              <p class="title is-5">Maria Silva</p>
+              <p class="subtitle is-6">Especialista em desenvolvimento de software</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-4-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/palestrante2.jpg" alt="João Souza">
+              </figure>
+            </div>
+            <div class="card-content has-text-centered">
+              <p class="title is-5">João Souza</p>
+              <p class="subtitle is-6">Engenheiro de redes e sistemas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column is-12-mobile is-4-desktop">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="img/palestrante3.jpg" alt="Ana Santos">
+              </figure>
+            </div>
+            <div class="card-content has-text-centered">
+              <p class="title is-5">Ana Santos</p>
+              <p class="subtitle is-6">Especialista em inteligência artificial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO DE INSCRIÇÃO -->
+  <section class="section" id="inscricao">
+    <div class="container">
+      <h2 class="title has-text-centered">Inscreva-se</h2>
+      <div class="columns is-centered">
+        <div class="column is-half">
+          <form>
+            <div class="field">
+              <label class="label">Nome</label>
+              <div class="control">
+                <input class="input" type="text" placeholder="Digite seu nome" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">E-mail</label>
+              <div class="control">
+                <input class="input" type="email" placeholder="Digite seu e-mail" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="label">Interesses</label>
+              <div class="control">
+                <div class="select is-fullwidth">
+                  <select>
+                    <option>Palestras</option>
+                    <option>Workshops</option>
+                    <option>Networking</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="control">
+                <button class="button is-success is-fullwidth" type="submit">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="footer has-background-light" id="contato">
+    <div class="content has-text-centered">
+      <p>© 2025 EventoTech - Todos os direitos reservados</p>
+      <div>
+        <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#" class="ml-3"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#" class="ml-3"><i class="fab fa-twitter fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPT PARA NAVBAR NO MOBILE -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach( el => {
+          el.addEventListener('click', () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
