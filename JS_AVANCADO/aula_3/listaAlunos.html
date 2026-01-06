@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de alunos</title>
+</head>
+<body>
+    <h2>Novos alunos no curso</h2>
+
+    <input id="campoNome" type="text" placeholder="Digite o nome do aluno">
+    <button id="btnCadastrar">Cadastrar</button>
+
+    <ol id="listaAlunos"></ol>
+
+    <script>
+        var campo = document.getElementById("campoNome");
+        var botao = document.getElementById("btnCadastrar");
+        var lista = document.getElementById("listaAlunos");
+
+        botao.addEventListener("click", cadastrar);
+        campo.addEventListener("keydown", function(event) {
+            if (event.key === "Enter") {
+                cadastrar();
+            }
+        });
+
+        // function disparaEventoEnter(event) {
+        //     if (event.key === "Enter") {
+        //         cadastrar();
+        //     }
+        // }
+
+        function cadastrar() {
+            const nome = campo.value.trim();
+
+            if (nome === "") {
+                alert("O bonitão, digita um nome válido!");
+                return;
+            }
+
+            const li = document.createElement("li");
+            li.textContent = nome.toUpperCase();
+
+            lista.appendChild(li);
+
+            campo.value = "";
+            campo.focus();
+        }
+    </script>
+</body>
+</html>

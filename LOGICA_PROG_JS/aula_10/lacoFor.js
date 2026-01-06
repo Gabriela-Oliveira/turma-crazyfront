@@ -44,11 +44,20 @@ function encadeamentoLacoBreak() {
 
 function lacoContinue() {
     for (var i = 0; i < 10; i++) {
-        
+
         if(i === 3) {
             continue;
         }
 
+        console.log("Index = à: " + i);
+        console.log("Index = à: " + i);
+        console.log("Index = à: " + i);
+        console.log("Index = à: " + i);
+        console.log("Index = à: " + i);
+        console.log("Index = à: " + i);
+        console.log("Index = à: " + i);
+        console.log("Index = à: " + i);
+        console.log("Index = à: " + i);
         console.log("Index = à: " + i);
     }
 }

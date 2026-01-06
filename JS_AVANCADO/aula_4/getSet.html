@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get/Set</title>
+</head>
+<body>
+    
+</body>
+<script>
+    class ContaBancaria {
+        constructor(valor) {
+            this._saldo = valor;
+        }
+
+        get saldo() {
+            return this._saldo;
+        }
+
+        set saldo(novoValor) {
+            if (novoValor > 0) {
+                this._saldo = this._saldo + novoValor;
+            } else {
+                console.error("É necessário inserir um valor!");
+            }
+        }
+    }
+
+    const conta = new ContaBancaria(1000);
+    console.log(conta);
+    
+    conta.saldo = 100;
+    console.log(conta);
+
+    conta.saldo = 0;
+    conta.saldo = -100;
+</script>
+</html>

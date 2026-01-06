@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando elemento</title>
+</head>
+<body>
+    <h1 id="titulo">Lista Doce</h1>
+
+    <ul>
+        <li class="doce">Brigadeiro</li>
+        <li class="doce">Beijinho</li>
+        <li class="doce">Bolo de Cenoura</li>
+    </ul>
+
+    <script>
+        var titulo = document.getElementById("titulo");
+        var doces = document.getElementsByClassName("doce");
+
+        console.log(titulo);
+        console.log(doces);
+
+        // Lê ou altera todo o texto de dentro do elemento, ignorando formatação HTML
+        console.log(titulo.textContent);
+        titulo.textContent = "Doces Preferidos";
+        console.log(titulo.textContent);
+        
+        // Tbm mostra o texto interno, mas respeita o CSS ex:(disply: none)
+        console.log(titulo.innerText);
+        titulo.innerText = "Doces Deliciosos";
+        console.log(titulo.innerText);
+
+        // Retornar ou alterar o HTML interno do elemento
+
+        console.log(titulo.innerHTML);
+        titulo.innerHTML = "<em>Doces Preferidos</em>"
+        
+        
+
+        const criandoTagP = document.createElement("p");
+        criandoTagP.innerText = "Quase chegando o NATAL!";
+        document.body.appendChild(criandoTagP);
+    </script>
+</body>
+</html>
