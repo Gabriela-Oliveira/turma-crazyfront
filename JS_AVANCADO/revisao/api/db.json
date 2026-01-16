@@ -1,0 +1,25 @@
+{
+  "pokemon": [
+    {
+      "id": "25",
+      "nome": "pikachu",
+      "tipo": "Elétrico",
+      "nivel": "5",
+      "regiao": "kanto"
+    },
+    {
+      "id": "1",
+      "nome": "bulbasaur",
+      "tipo": "Planta/Veneno",
+      "nivel": "5",
+      "regiao": "kanto"
+    },
+    {
+      "id": "133",
+      "nome": "eevee",
+      "tipo": "Normal",
+      "nivel": "5",
+      "regiao": "kanto"
+    }
+  ]
+}
